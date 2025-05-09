@@ -1,4 +1,4 @@
-# if condition:
+# elif condition:
 #     action
 
 age = 17
