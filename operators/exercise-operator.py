@@ -4,9 +4,9 @@ Exercise: Combine logical operators with function calls and list handling.
 
 Objective:
     Display restricted sections only to users who satisfy:
-      1. Have role "admin" OR are in the authorized editors list.
-      2. Are NOT in the blocked users list.
-      3. Last login was less than 30 days ago.
+    1. Have role "admin" OR are in the authorized editors list.
+    2. Are NOT in the blocked users list.
+    3. Last login was less than 30 days ago.
 
 This script simulates data from an SQL database and shows
 how to combine logical
