@@ -8,19 +8,22 @@ Objective:
       2. Are NOT in the blocked users list.
       3. Last login was less than 30 days ago.
 
-This script simulates data from an SQL database and shows how to combine logical
+This script simulates data from an SQL database and shows
+how to combine logical
 operators, function calls, and list membership checks in Python.
 """
 
 # Simulated data (would come from SQL queries in a real app)
 rol_usuario = "admin"  # Role of the current user
-authorized_editors = ["ana", "luis", "maría"]  # List of usernames allowed as editors
+# List of usernames allowed as editors
+authorized_editors = ["ana", "luis", "maría"]
 blocked_users = ["pepe", "julia"]  # List of usernames that are blocked
 
 
 def days_since_last_login(user) -> int:
     """
-    Simulates querying a database for the number of days since the user's last login.
+    Simulates querying a database for the number
+    of days since the user's last login.
 
     Args:
         user (str): Username to check.
@@ -28,15 +31,9 @@ def days_since_last_login(user) -> int:
     Returns:
         int: Number of days since last login. Returns 999 if user not found.
     """
-    history = {
-        "ana":    10,
-        "luis":   45,
-        "maría":  25,
-        "javier":  5,
-        "pepe":    3,
-        "julia":   4
-    }
-    # Use .get() to return a large number if the user is not in the history dict
+    history = {"ana": 10, "luis": 45, "maría": 25, "javier": 5, "pepe": 3, "julia": 4}
+    # Use .get() to return a large number if the user
+    # is not in the history dict
     return history.get(user, 999)
 
 
@@ -62,7 +59,6 @@ acceso_secciones = tiene_permiso_rol and no_bloqueado and conexion_reciente
 
 # 5. Output the result
 if acceso_secciones:
-  print("Acceso permitido")
+    print("Acceso permitido")
 else:
-  print("Acceso denegado")
-
+    print("Acceso denegado")
