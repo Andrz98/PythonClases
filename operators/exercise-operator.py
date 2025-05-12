@@ -31,7 +31,14 @@ def days_since_last_login(user) -> int:
     Returns:
         int: Number of days since last login. Returns 999 if user not found.
     """
-    history = {"ana": 10, "luis": 45, "maría": 25, "javier": 5, "pepe": 3, "julia": 4}
+    history = {
+        "ana": 10,
+        "luis": 45,
+        "maría": 25,
+        "javier": 5,
+        "pepe": 3,
+        "julia": 4,
+    }
     # Use .get() to return a large number if the user
     # is not in the history dict
     return history.get(user, 999)
@@ -42,7 +49,9 @@ current_user = "luis"
 
 # 1. Role or explicit permission check
 #    True if the user is an admin OR is listed as an authorized editor
-tiene_permiso_rol = (rol_usuario == "admin") or (current_user in authorized_editors)
+tiene_permiso_rol = (rol_usuario == "admin") or (
+    current_user in authorized_editors
+)
 
 # 2. Security check: ensure the user is not blocked
 #    True if current_user does NOT appear in blocked_users
