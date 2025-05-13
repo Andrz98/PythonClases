@@ -97,8 +97,14 @@ impresoras_3d = [
 
 # Ordeno la lista en orden alfabético
 impresoras_3d.sort()
-print("He reordenado la lsita por orden alfabético:", impresoras_3d)
+print("He reordenado la lista por orden alfabético:", impresoras_3d)
+
+impresoras_3d.sort(key=len)
+print("por la longitud:", impresoras_3d)
+
+impresoras_3d.sort(key=str.lower)
+print(impresoras_3d)
 
 # Invierto el orden de la lista
 impresoras_3d.reverse()
-print("Se cambia el orden de lso modelos de impresoras 3d:", impresoras_3d)
+print("Se cambia el orden de los modelos de impresoras 3d:", impresoras_3d)
