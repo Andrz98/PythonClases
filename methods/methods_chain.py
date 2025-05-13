@@ -99,6 +99,9 @@ try:
 except ValueError:
     print("En este momento la línea no contiene 'ERROR'")
 
+aparece_num = linea_log.count("2")
+print(f"2 aparece {aparece_num} veces")
+
 
 # ----------------------------------------
 # Ejercicio 4: Aprendizaje para distinguir cadenas que contienen solo dígitos
