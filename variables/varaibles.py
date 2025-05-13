@@ -8,7 +8,8 @@ print(c)
 
 # "A" declara la variables y el 2 es la definición de la variable
 
-# La variable "a", puede definirse tantas veces como yo quiera, por eso es una variable
+# La variable "a", puede definirse tantas veces como yo quiera,
+# por eso es una variable
 
 nombre = "Andrés"
 apellido = "Guerrero"
