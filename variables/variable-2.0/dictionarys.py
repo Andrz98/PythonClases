@@ -13,7 +13,7 @@ diccionario_1 = {frozenset(diccionario): "XD"}
 print(diccionario_1)
 
 # Creamos diccionarios con fromkeys("Dentro de esto, creamos claves")
-diccionario_keys = dict.fromkeys("ABCDE")
+diccionario_keys = dict.fromkeys("ABCDE", "abecedario")
 print(diccionario_keys)
 
 # Lo que hace esto es que cada letra representa el valor de un índice
