@@ -14,3 +14,16 @@ print(numero_mas_bajo)
 
 decimales = round(28.94356, 2)
 print(decimales)
+
+# funcición Bool() retorna False -> 0, vacío, false, ninguno
+resultado_bool = bool(0)
+
+print(resultado_bool)
+
+# La función All(), retorna True, si todos los valores son veraderos.
+resultado_all = all(["true", [344, 23]])
+print(resultado_all)
+
+# sum() suma todos los valores de un iterable
+suma_total = sum(numeros)
+print(suma_total)
