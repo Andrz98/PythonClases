@@ -13,7 +13,7 @@ print("Multiplication:", multiplication)
 print("Division:", division)
 
 # Exponentiation (**)
-exponent = 12 ** 5
+exponent = 12**5
 print("Exponent:", exponent)
 
 # Floor division (//)
