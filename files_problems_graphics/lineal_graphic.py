@@ -27,4 +27,4 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-# Debemso trabajar gráficos de velas, lineales, etc.
+# Debemos trabajar gráficos de velas, lineales, etc.
